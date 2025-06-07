@@ -2,6 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Michal Lauer",
+      "jobTitle": "Research and Data Scientist",
+      "url": "https://laumi.me",
+      "image": "https://laumi.me/assets/profile.jpeg",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Economics, Prague",
+        "url": "https://vse.cz"
+      },
+      "knowsAbout": [
+        "Bayesian Statistics",
+        "Causality",
+        "Machine Learning",
+        "Data Science",
+        "MCMC Methods"
+      ],
+      "description": "Research and Data Scientist specializing in Bayesian Statistics, Causality, and Machine Learning",
+      "sameAs": [
+        "https://www.linkedin.com/in/michal-lauer/",
+        "https://github.com/MichalLauer",
+        "https://www.researchgate.net/profile/Michal-Lauer"
+      ]
+    }
+    </script>
     <!-- Ensure all anchors open in a new tab -->
     <base target="_blank">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,35 +60,8 @@
   </head>
   <body>
     <div class="container">
-      <nav class="sidebar" aria-label="Main Navigation">
-        <ul>
-          <li>
-            <a href="#about" target="_self" aria-current="page">About Me</a>
-          </li>
-          <li>
-            <a href="#research" target="_self">Research</a>
-          </li>
-          <li>
-            <a href="#teaching" target="_self">Teaching</a>
-            <ul>
-              <li>
-                <a href="#teaching-resources" target="_self">Resources</a>
-              </li>
-              <li>
-                <a href="#teaching-vse" target="_self">VŠE</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#testimonials" target="_self">Testimonials</a>
-          </li>
-        </ul>
-        <div class="sidebar-bottom-item">
-          <a href="mailto:michal.lauer.25@gmail.com" class="sidebar-contact" title="Contact Michal Lauer" aria-label="Contact Michal Lauer">
-            <i class="fas fa-envelope"></i> Write me!
-          </a>
-        </div>
-      </nav>
+      <nav class="sidebar" aria-label="Main Navigation"> </nav>
+      
       <main class="content">
         <header id="about" class="landing-section">
           <div class="landing-left">

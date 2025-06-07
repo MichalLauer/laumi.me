@@ -44,14 +44,39 @@ function positionTooltip(el, tooltip) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Sidebar submenu hover
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.querySelectorAll('li').forEach(li => {
-        li.addEventListener('mouseenter', () => li.classList.add('open'));
-    });
-    sidebar.addEventListener('mouseleave', () => {
-        sidebar.querySelectorAll('li').forEach(li => li.classList.remove('open'));
-    });
+    // Setup sidebar
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insert 
+            document.querySelector('nav.sidebar').innerHTML = data;
+
+            // Sidebar submenu hover
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.querySelectorAll('li').forEach(li => {
+                li.addEventListener('mouseenter', () => li.classList.add('open'));
+            });
+            sidebar.addEventListener('mouseleave', () => {
+                sidebar.querySelectorAll('li').forEach(li => li.classList.remove('open'));
+            });
+            
+            // Smooth scroll for internal anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    // Only handle if href is just an id (not a full URL)
+                    const targetId = this.getAttribute('href').slice(1);
+                    if (!targetId) return;
+                    const target = document.getElementById(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth' });
+                        // Optionally update the URL hash without jumping
+                        history.pushState(null, '', `#${targetId}`);
+                    }
+                });
+            });
+        });
+
 
     // Testimonial data with unique entries
     const testimonials = [
@@ -186,20 +211,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial render
     renderCarouselCards();
-
-    // Smooth scroll for internal anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            // Only handle if href is just an id (not a full URL)
-            const targetId = this.getAttribute('href').slice(1);
-            if (!targetId) return;
-            const target = document.getElementById(targetId);
-            if (target) {
-                e.preventDefault();
-                target.scrollIntoView({ behavior: 'smooth' });
-                // Optionally update the URL hash without jumping
-                history.pushState(null, '', `#${targetId}`);
-            }
-        });
-    });
 });
