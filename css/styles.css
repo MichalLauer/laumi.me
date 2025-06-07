@@ -247,6 +247,26 @@ section {
   box-shadow: var(--shadow);
 }
 
+body:has(.iframe-container) {
+  overflow: hidden;
+}
+
+.iframe-container {
+  margin-left: var(--sidebar-width);
+}
+
+.iframe-container iframe {
+  display: block;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: var(--content-width);
+  height: 100vh;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  border: none;
+}
+
 /* Landing Section */
 .landing-section {
   display: flex;
