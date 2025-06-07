@@ -1,42 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <!-- Ensure all anchors open in a new tab -->
-    <base target="_blank">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Michal Lauer's Blog - Insights into Data Science, Bayesian Statistics, and Machine Learning">
-    <meta name="keywords" content="blog, data science, bayesian statistics, machine learning, research insights, academic writing">
-    <meta name="author" content="Michal Lauer">
-    <meta name="robots" content="index, follow">
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://laumi.me/blog.html">
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/profile.jpeg">
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://laumi.me/blog.html">
-    <meta property="og:title" content="Michal Lauer's Data Science Blog">
-    <meta property="og:description" content="Exploring insights in Bayesian Statistics, Machine Learning, and Research">
-    <meta property="og:image" content="assets/profile.jpeg">
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://laumi.me/blog.html">
-    <meta property="twitter:title" content="Michal Lauer's Data Science Blog">
-    <meta property="twitter:description" content="Exploring insights in Bayesian Statistics, Machine Learning, and Research">
-    <meta property="twitter:image" content="assets/profile.jpeg">
-    <title>Michal Lauer - Blog</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <div class="container">
-        <nav class="sidebar" aria-label="Main Navigation"> </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Understanding Machine Learning Algorithms - Michal Lauer</title>
+  <meta name="description" content="A deep dive into the core principles of machine learning algorithms, exploring their mathematical foundations and practical applications in real-world scenarios.">
+  <meta name="keywords" content="machine learning, algorithms, data science, mathematical foundations, practical applications, Michal Lauer">
+  <meta name="author" content="Michal Lauer">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://laumi.me/pages/article-a.html">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+  <link rel="apple-touch-icon" href="../assets/profile.jpeg">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://laumi.me/pages/article-a.html">
+  <meta property="og:title" content="Understanding Machine Learning Algorithms">
+  <meta property="og:description" content="A deep dive into the core principles of machine learning algorithms, exploring their mathematical foundations and practical applications.">
+  <meta property="og:image" content="https://laumi.me/assets/profile.jpeg">
+  <meta property="article:author" content="Michal Lauer">
+  <meta property="article:published_time" content="2025-06-01T00:00:00Z">
+  <meta property="article:section" content="Data Science">
+  <meta property="article:tag" content="Machine Learning">
+  <meta property="article:tag" content="Data Science">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://laumi.me/pages/article-a.html">
+  <meta name="twitter:title" content="Understanding Machine Learning Algorithms">
+  <meta name="twitter:description" content="A deep dive into the core principles of machine learning algorithms, exploring their mathematical foundations and practical applications.">
+  <meta name="twitter:image" content="https://laumi.me/assets/profile.jpeg">
+  
+  <!-- JSON-LD Structured Data for Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Understanding Machine Learning Algorithms",
+    "description": "A deep dive into the core principles of machine learning algorithms, exploring their mathematical foundations and practical applications in real-world scenarios.",
+    "image": "https://laumi.me/assets/profile.jpeg",
+    "author": {
+      "@type": "Person",
+      "name": "Michal Lauer",
+      "url": "https://laumi.me"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Michal Lauer",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://laumi.me/assets/profile.jpeg"
+      }
+    },
+    "datePublished": "2025-06-01",
+    "dateModified": "2025-06-01",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://laumi.me/pages/article-a.html"
+    },
+    "keywords": ["machine learning", "algorithms", "data science", "mathematical foundations"],
+    "articleSection": "Data Science"
+  }
+  </script>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  
+  <!-- Ensure external links open in new tab -->
+  <base target="_blank">
+</head>
 
-        <main class="content">
-            <p>Article 1</p>
-        </main>
+<body>
+  <div class="container">
+    <!-- Navigation Sidebar -->
+    <nav class="sidebar" role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="../index.html#about" target="_self">About Me</a></li>
+        <li><a href="../index.html#research" target="_self">Research</a></li>
+        <li>
+          <a href="../index.html#teaching" target="_self">Teaching</a>
+          <ul>
+            <li><a href="../index.html#teaching-resources" target="_self">Resources</a></li>
+            <li><a href="../index.html#teaching-vse" target="_self">VŠE</a></li>
+          </ul>
+        </li>
+        <li><a href="../index.html#testimonials" target="_self">Testimonials</a></li>
+        <li><a href="../index.html#blog" target="_self">Blog</a></li>
+      </ul>
+      
+      <div class="sidebar-bottom-item">
+        <a href="mailto:michal.lauer.25@gmail.com" class="sidebar-contact" title="Contact Michal Lauer" aria-label="Contact Michal Lauer">
+          <i class="fas fa-envelope" aria-hidden="true"></i> Write me!
+        </a>
+      </div>
+    </nav>
 
-    <script src="js/script.js"></script>
-  </body>
+    <!-- Main Content -->
+    <main class="content">
+      <!-- Breadcrumb Navigation -->
+      <nav aria-label="Breadcrumb" style="padding: 1rem 1.5rem;">
+        <ol style="list-style: none; padding: 0; margin: 0; display: flex; gap: 0.5rem; font-size: 0.9rem; color: #666;">
+          <li><a href="../index.html" target="_self" style="color: var(--accent);">Home</a></li>
+          <li aria-hidden="true">/</li>
+          <li><a href="../index.html#blog" target="_self" style="color: var(--accent);">Blog</a></li>
+          <li aria-hidden="true">/</li>
+          <li aria-current="page">Understanding Machine Learning Algorithms</li>
+        </ol>
+      </nav>
+
+      <!-- Article Content -->
+      <article>
+        <header style="text-align: center; padding: 2rem 1.5rem; background: var(--card-bg); margin: 0 auto 2rem; max-width: var(--content-width); border-radius: var(--border-radius); box-shadow: var(--shadow);">
+          <h1 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-main);">Understanding Machine Learning Algorithms</h1>
+          
+          <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 1rem; flex-wrap: wrap; font-size: 0.9rem; color: var(--text-muted);">
+            <time datetime="2025-06-01">
+              <i class="fas fa-calendar" aria-hidden="true"></i> June 1, 2025
+            </time>
+            <span>
+              <i class="fas fa-user" aria-hidden="true"></i> Michal Lauer
+            </span>
+            <span>
+              <i class="fas fa-clock" aria-hidden="true"></i> 5 min read
+            </span>
+          </div>
+          
+          <div style="display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap;">
+            <span style="background: #f1f1f1; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">Data Science</span>
+            <span style="background: #f1f1f1; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">Machine Learning</span>
+          </div>
+        </header>
+
+        <section style="max-width: var(--content-width); margin: 0 auto; padding: 0 1.5rem;">
+          <div style="background: var(--card-bg); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--shadow); line-height: 1.7;">
+            
+            <h2>Introduction</h2>
+            <p>Machine learning algorithms form the backbone of modern artificial intelligence systems. Understanding their core principles is essential for anyone working in data science, whether you're a beginner or an experienced practitioner looking to deepen your knowledge.</p>
+            
+            <h2>Mathematical Foundations</h2>
+            <p>At their core, machine learning algorithms rely on mathematical concepts from linear algebra, calculus, and statistics. These mathematical foundations enable algorithms to learn patterns from data and make predictions on new, unseen examples.</p>
+            
+            <h3>Key Mathematical Concepts</h3>
+            <ul>
+              <li><strong>Linear Algebra:</strong> Vectors, matrices, and eigenvalues</li>
+              <li><strong>Calculus:</strong> Derivatives and optimization</li>
+              <li><strong>Statistics:</strong> Probability distributions and hypothesis testing</li>
+              <li><strong>Information Theory:</strong> Entropy and information gain</li>
+            </ul>
+            
+            <h2>Types of Machine Learning</h2>
+            <p>Machine learning can be broadly categorized into three main types:</p>
+            
+            <h3>Supervised Learning</h3>
+            <p>In supervised learning, algorithms learn from labeled training data to make predictions on new data. Common examples include classification and regression tasks.</p>
+            
+            <h3>Unsupervised Learning</h3>
+            <p>Unsupervised learning algorithms find hidden patterns in data without labeled examples. Clustering and dimensionality reduction are typical applications.</p>
+            
+            <h3>Reinforcement Learning</h3>
+            <p>Reinforcement learning involves agents learning to make decisions through interaction with an environment, receiving rewards or penalties for their actions.</p>
+            
+            <h2>Practical Applications</h2>
+            <p>Machine learning algorithms have found applications across numerous domains:</p>
+            
+            <ul>
+              <li><strong>Healthcare:</strong> Medical diagnosis and drug discovery</li>
+              <li><strong>Finance:</strong> Fraud detection and algorithmic trading</li>
+              <li><strong>Technology:</strong> Recommendation systems and natural language processing</li>
+              <li><strong>Transportation:</strong> Autonomous vehicles and route optimization</li>
+            </ul>
+            
+            <h2>Best Practices</h2>
+            <p>When implementing machine learning algorithms, consider these best practices:</p>
+            
+            <ol>
+              <li><strong>Data Quality:</strong> Ensure your data is clean, relevant, and representative</li>
+              <li><strong>Feature Engineering:</strong> Create meaningful features that capture important patterns</li>
+              <li><strong>Model Selection:</strong> Choose algorithms appropriate for your problem type and data size</li>
+              <li><strong>Validation:</strong> Use proper cross-validation techniques to assess model performance</li>
+              <li><strong>Interpretability:</strong> Consider the trade-off between model complexity and interpretability</li>
+            </ol>
+            
+            <h2>Conclusion</h2>
+            <p>Understanding machine learning algorithms requires a solid grasp of their mathematical foundations combined with practical experience in applying them to real-world problems. As the field continues to evolve, staying updated with new developments and maintaining a strong theoretical foundation will be key to success.</p>
+            
+            <p>Whether you're just starting your journey in machine learning or looking to deepen your understanding, remember that the most important aspect is continuous learning and practical application of these powerful tools.</p>
+            
+          </div>
+        </section>
+
+        <!-- Article Footer -->
+        <footer style="max-width: var(--content-width); margin: 2rem auto 0; padding: 0 1.5rem;">
+          <div style="background: var(--card-bg); padding: 1.5rem; border-radius: var(--border-radius); box-shadow: var(--shadow); text-align: center;">
+            <p style="margin-bottom: 1rem; color: var(--text-muted);">Found this article helpful? Share it with others!</p>
+            
+            <div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 1rem;">
+              <a href="https://twitter.com/intent/tweet?url=https://laumi.me/pages/article-a.html&text=Understanding%20Machine%20Learning%20Algorithms" 
+                 style="color: var(--accent); font-size: 1.2rem;" title="Share on Twitter" aria-label="Share on Twitter">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://laumi.me/pages/article-a.html" 
+                 style="color: var(--accent); font-size: 1.2rem;" title="Share on LinkedIn" aria-label="Share on LinkedIn">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </div>
+            
+            <a href="../index.html#blog" target="_self" style="display: inline-block; padding: 0.5rem 1rem; background: var(--accent); color: white; border-radius: 6px; text-decoration: none; transition: var(--transition);">
+              ← Back to Blog
+            </a>
+          </div>
+        </footer>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer style="text-align: center; margin-left: var(--sidebar-width); padding: 2rem; color: var(--text-muted);">
+      <p>Made with <span style="color: #e74c3c;">❤️</span> &amp; AI &copy; <time datetime="2025">2025</time> Michal Lauer.</p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/script.js"></script>
+</body>
 </html>
