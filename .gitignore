@@ -4,3 +4,4 @@
 .Ruserdata
 pages/*/*_files/
 pages/*/*.html
+/.quarto/

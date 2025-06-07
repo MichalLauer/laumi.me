@@ -13,3 +13,12 @@ html, body {
   font-size: 16px !important;
   line-height: 1.6 !important;
 }
+
+.utterances {
+  margin-left: calc(var(--sidebar-width) - 3em);
+}
+
+footer {
+  display: flex;
+    justify-content: flex-end;
+}

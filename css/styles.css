@@ -899,7 +899,6 @@ body:has(.iframe-container) {
 footer {
   text-align: center;
   margin-left: var(--sidebar-width);
-  padding: 2rem;
   color: var(--text-muted);
 }
 

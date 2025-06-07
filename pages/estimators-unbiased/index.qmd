@@ -5,18 +5,6 @@ description: |
   When it comes to statistical analysis, unbiased estimators play a critical role in obtaining accurate results. But what exactly is an unbiased estimator, and how can it be applied in practical situations?
 date: 2023-03-27
 date-modified: 2025-06-06
-format:
-  html:
-    css:
-      - "../../css/styles.css"
-      - "../../css/article.css"
-    page-layout: full
-    fig-align: center
-    include-before-body: "../navbar.html"
-    include-after-body: "../footer.html"
-    include-in-header: 
-      - text: |
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 ---
 ```{r include=FALSE}
 options(renv.config.sandbox.enabled = F)

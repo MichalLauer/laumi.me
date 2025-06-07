@@ -5,18 +5,6 @@ description: |
   Consistent estimators hold a pivotal role in delivering precise statistical outcomes. Let's unravel their mystery and reveal how they shape real-world prediction scenarios.
 date: 2023-08-01
 date-modified: 2023-08-01
-format:
-  html:
-    css:
-      - "../../css/styles.css"
-      - "../../css/article.css"
-    page-layout: full
-    fig-align: center
-    include-before-body: "../navbar.html"
-    include-after-body: "../footer.html"
-    include-in-header: 
-      - text: |
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 bibliography: assets/bib/literature.bib
 # https://github.com/citation-style-language/styles
 csl: assets/bib/iso690-author-date-cs.csl
