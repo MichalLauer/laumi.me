@@ -28,15 +28,119 @@
     <title>Michal Lauer - Blog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
   </head>
   <body>
     <div class="container">
         <nav class="sidebar" aria-label="Main Navigation"> </nav>
 
         <main class="content">
-            <p>Blogiiiisek!</p>
+          
+          <section class="tag-filter" id="tagFilter">
+              <h1>Blog Posts</h1>
+            <input type="text" class="blog-search" placeholder="Search blog posts..." id="blogSearch">
+                <button class="active" data-tag="all">All</button>
+                <button data-tag="data-science">Data Science</button>
+                <button data-tag="bayesian-statistics">Bayesian Statistics</button>
+                <button data-tag="machine-learning">Machine Learning</button>
+            </section>
+
+            <section class="blog-posts" id="blogPosts">
+                <article class="blog-post" data-tags="data-science machine-learning">
+                    <h2><a href="pages/article-a.html">Understanding Machine Learning Algorithms</a></h2>
+                    <div class="post-meta">
+                        <span class="post-date">June 1, 2025</span> | 
+                        <span class="post-author">Michal Lauer</span>
+                    </div>
+                    <div class="post-tags">
+                        <span>Data Science</span>
+                        <span>Machine Learning</span>
+                    </div>
+                    <p>A deep dive into the core principles of machine learning algorithms, exploring their mathematical foundations and practical applications in real-world scenarios.</p>
+                </article>
+
+                <article class="blog-post" data-tags="bayesian-statistics research">
+                    <h2><a href="pages/article-b.html">Bayesian Inference in Modern Research</a></h2>
+                    <div class="post-meta">
+                        <span class="post-date">May 15, 2025</span> | 
+                        <span class="post-author">Michal Lauer</span>
+                    </div>
+                    <div class="post-tags">
+                        <span>Bayesian Statistics</span>
+                        <span>Research</span>
+                    </div>
+                    <p>Exploring the power of Bayesian statistical methods in contemporary research, highlighting their advantages over traditional frequentist approaches.</p>
+                </article>
+
+                                <article class="blog-post" data-tags="bayesian-statistics research">
+                    <h2><a href="pages/article-b.html">Bayesian Inference in Modern Research</a></h2>
+                    <div class="post-meta">
+                        <span class="post-date">May 15, 2025</span> | 
+                        <span class="post-author">Michal Lauer</span>
+                    </div>
+                    <div class="post-tags">
+                        <span>Bayesian Statistics</span>
+                        <span>Research</span>
+                    </div>
+                    <p>Exploring the power of Bayesian statistical methods in contemporary research, highlighting their advantages over traditional frequentist approaches.</p>
+                </article>
+
+                                <article class="blog-post" data-tags="bayesian-statistics research">
+                    <h2><a href="pages/article-b.html">Bayesian Inference in Modern Research</a></h2>
+                    <div class="post-meta">
+                        <span class="post-date">May 15, 2025</span> | 
+                        <span class="post-author">Michal Lauer</span>
+                    </div>
+                    <div class="post-tags">
+                        <span>Bayesian Statistics</span>
+                        <span>Research</span>
+                    </div>
+                    <p>Exploring the power of Bayesian statistical methods in contemporary research, highlighting their advantages over traditional frequentist approaches.</p>
+                </article>
+
+                                <article class="blog-post" data-tags="bayesian-statistics research">
+                    <h2><a href="pages/article-b.html">Bayesian Inference in Modern Research</a></h2>
+                    <div class="post-meta">
+                        <span class="post-date">May 15, 2025</span> | 
+                        <span class="post-author">Michal Lauer</span>
+                    </div>
+                    <div class="post-tags">
+                        <span>Bayesian Statistics</span>
+                        <span>Research</span>
+                    </div>
+                    <p>Exploring the power of Bayesian statistical methods in contemporary research, highlighting their advantages over traditional frequentist approaches.</p>
+                </article>
+
+                                <article class="blog-post" data-tags="bayesian-statistics research">
+                    <h2><a href="pages/article-b.html">Bayesian Inference in Modern Research</a></h2>
+                    <div class="post-meta">
+                        <span class="post-date">May 15, 2025</span> | 
+                        <span class="post-author">Michal Lauer</span>
+                    </div>
+                    <div class="post-tags">
+                        <span>Bayesian Statistics</span>
+                        <span>Research</span>
+                    </div>
+                    <p>Exploring the power of Bayesian statistical methods in contemporary research, highlighting their advantages over traditional frequentist approaches.</p>
+                </article>
+
+                                <article class="blog-post" data-tags="bayesian-statistics research">
+                    <h2><a href="pages/article-b.html">Bayesian Inference in Modern Research</a></h2>
+                    <div class="post-meta">
+                        <span class="post-date">May 15, 2025</span> | 
+                        <span class="post-author">Michal Lauer</span>
+                    </div>
+                    <div class="post-tags">
+                        <span>Bayesian Statistics</span>
+                        <span>Research</span>
+                    </div>
+                    <p>Exploring the power of Bayesian statistical methods in contemporary research, highlighting their advantages over traditional frequentist approaches.</p>
+                </article>
+            </section>
         </main>
+    </div>
 
     <script src="js/script.js"></script>
+    <script src="js/blog.js"></script>
   </body>
 </html>
