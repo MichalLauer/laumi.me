@@ -161,10 +161,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="testimonial-text">${testimonial.text}</div>
                 <div class="testimonial-bottom-row">
                     <div class="testimonial-number">${cardIndex + 1}</div>
-                    <div class="testimonial-source">
-                        ${testimonial.source} 
+                    <div class="testimonial-source"> 
                         <a href="${testimonial.url}" target="_blank" rel="noopener" 
-                           class="testimonial-link" title="Source" aria-label="Source">🔗</a>
+                           class="testimonial-link" title="Source" aria-label="Source">
+                           ${testimonial.source}
+                        </a> 🔗
                     </div>
                 </div>
             `;
@@ -185,4 +186,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial render
     renderCarouselCards();
+
+    // Smooth scroll for internal anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            // Only handle if href is just an id (not a full URL)
+            const targetId = this.getAttribute('href').slice(1);
+            if (!targetId) return;
+            const target = document.getElementById(targetId);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth' });
+                // Optionally update the URL hash without jumping
+                history.pushState(null, '', `#${targetId}`);
+            }
+        });
+    });
 });

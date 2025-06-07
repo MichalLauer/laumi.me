@@ -789,6 +789,11 @@ header ~ section:first-of-type {
     margin-top: auto;
 }
 
+.testimonial-source a {
+    color: inherit;
+    text-decoration: underline !important;
+}
+
 .testimonial-link {
     margin-left: 4px;
     color: var(--accent, #007bff);
@@ -971,4 +976,29 @@ header ~ section:first-of-type {
 .color-dot.yellow {
   background: #ffd84f;
   border-color: #ffd84f;
+}
+
+.sidebar-bottom-item {
+    margin-top: auto;
+    width: 100%;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: center;
+}
+.sidebar-contact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-light);
+    font-weight: 600;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    background: var(--accent, #3fa7d6);
+    transition: background 0.2s, color 0.2s;
+}
+.sidebar-contact:hover {
+    background: var(--accent-dark, #2b7a9a);
+    color: #fff;
 }
