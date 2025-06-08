@@ -88,6 +88,11 @@ jobs:
       - name: Install Quarto and render
         uses: pommevilla/quarto-render@main
 
+      - name: Remove last 4 lines from .gitignore
+        run: |
+          head -n -4 .gitignore > temp && mv temp .gitignore
+          rm -f temp
+
       - name: Commit rendered files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
