@@ -85,8 +85,13 @@ jobs:
           if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
           renv::restore()
 
-      - name: Install Quarto and render
-        uses: pommevilla/quarto-render@main
+      - name: Install Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.5.56
+
+      - name: Render Quarto
+        uses: quarto-dev/quarto-actions/render@v2
 
       - name: Remove last 4 lines from .gitignore
         run: |
