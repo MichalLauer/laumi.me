@@ -6,27 +6,39 @@ on:
 jobs:
   minify:
     runs-on: ubuntu-latest
+    env:
+      GIT_AUTH_TOKEN: ${{ secrets.GH_PAT }}
 
     steps:
       - name: Check out main branch
         uses: actions/checkout@v4
         with:
           ref: main
+          token: ${{ secrets.GH_PAT }}
 
       - name: Set up Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Create and switch to dev branch
-        run: |
-          git checkout -B dev
+      - run: git checkout -B dev
 
-      - name: Auto minify the files
+      - name: Minify .css
         uses: nizarmah/auto-minify@v3
+        with:
+          overwrite: true
+          directory: "css"
 
-      - name: Commit minified files to dev
+      - name: Minify .js
+        uses: nizarmah/auto-minify@v3
+        with:
+          overwrite: true
+          directory: "js"
+
+      - name: Commit minified files to prod
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "GHA: Minified .css and .js"
-          branch: dev
+          create_branch: true
+          branch: prod
+          push_options: '--force'
