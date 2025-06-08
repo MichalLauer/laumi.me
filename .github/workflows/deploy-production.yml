@@ -1,0 +1,32 @@
+name: Deploy to production
+
+on:
+  workflow_dispatch:
+
+jobs:
+  minify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Create and switch to dev branch
+        run: |
+          git checkout -B dev
+
+      - name: Auto minify the files
+        uses: nizarmah/auto-minify@v3
+
+      - name: Commit minified files to dev
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "GHA: Minified .css and .js"
+          branch: dev
