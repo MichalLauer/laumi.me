@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        .error-code {
+            font-size: 120px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+        }
+        .error-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        .error-message {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .stats-joke {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            font-style: italic;
+            border-left: 4px solid #fff;
+        }
+        .home-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+        }
+        .home-button:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .probability {
+            font-size: 0.9em;
+            margin-top: 20px;
+            opacity: 0.8;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .error-code {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Null Hypothesis Confirmed!</h1>
+        <p class="error-message">
+            Congratulations! You've successfully proven that this page doesn't exist. 
+            Your research methodology was flawless.
+        </p>
+        
+        <div class="stats-joke">
+            "There are three kinds of lies: lies, damned lies, and statistics... 
+            but at least statistics don't lead you to pages that don't exist!"
+            <br><br>
+            <strong>Error Analysis:</strong> The probability of finding this page approaches zero 
+            as your frustration approaches infinity.
+        </div>
+        
+        <p class="error-message">
+            Don't worry though - unlike a Type I error, this mistake is easily corrected!
+        </p>
+        
+        <a href="/" class="home-button">Return to Significant Results</a>
+        
+        <div class="probability">
+            <small>P(finding this page) < 0.001*</small><br>
+            <small>*Results not peer-reviewed</small>
+        </div>
+    </div>
+</body>
+</html>
